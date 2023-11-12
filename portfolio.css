@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap');
+
+.container {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+
+.face {
+    width: 3vw;
+    border-radius: 110px;
+    min-width: 50px;
+}
+
+.name {
+    padding: 20px 0px 20px 20px;
+}
+
+p, li, .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.name {
+        font-weight: 1000;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav_links li a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+
+.wrap_about {
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 890px) {
+    .nav_links{
+        display: flex;
+        row-gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .sections li {
+        flex-basis: 33.333333%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .sections {
+        display: none;
+    }
+
+}
+
+.about {
+    justify-content: flex-start;
+    margin: 50px 25px;
+    background-color: #006666;
+    border-radius: 10px;
+    height: 15em;
+    display: flex;
+}
+
+.about_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_text p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    padding: 15px 30px;
+    margin: 0;
+    color: white;
+}
+
+.about_desc {
+    box-shadow: 0 5px 5px 0 rgba(27, 28, 29, 0.5), 0 0 0 1px #1c1c1d;
+    text-justify: auto;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px 20px;
+    padding: 0 20px;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 940px) {
+    .about{
+        flex-direction: column;
+        height: auto;
+    }    
+}
+
+hr {
+    border-top: 3.5px solid #bbb;
+}
+
+.wrap_education, .wrap_projects, .wrap_accolades {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.education, .projects, .accolades {
+    margin: 50px 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006666;
+    border-radius: 10px;
+    height: 15em;
+    height: auto;
+    width: 75%;
+    text-align: center;
+}
+
+.education_details, .project_details, .accolade_details {
+    margin-bottom: 20px;
+}
+
+.education_text, .project_text p, .accolade_text p {
+    margin: 15px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    padding: 15px 30px;
+    margin: 0;
+    color: white;
+}
+
+.education_details .flex_container, .project_details .flex_container, .accolade_details .flex_container {
+    display: flex;
+    padding: 0px 10px;
+    
+}
+
+.SSC, .HSC, .Honours, .dbms, .oop, .rcbot, .bitrcbot {
+    box-shadow: 0 5px 5px 0 rgba(27, 28, 29, 0.5), 0 0 0 1px #1c1c1d;
+    text-justify: auto;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 10px;
+    padding: 0 20px;
+    flex-grow: 0;
+    max-width: 50%;
+}
+
+.SSC img {
+    width: 150px;
+    height: fit-content;
+    margin-top: 20px;
+} 
+
+.HSC img{
+    width: 180px;
+    height: fit-content;
+    margin-top: 20px;
+} 
+
+.Honours img {
+    width: 310px;
+    height: fit-content;
+    margin-top: 20px;
+} 
+
+.dbms img {
+    width: 150px;
+    height: fit-content;
+}
+
+.oop img {
+    width: 250px;
+    height: fit-content;
+    padding-bottom: 7px;
+    margin-top: 6px;
+}
+
+.dbms a, .oop a {
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+.SSC p, .HSC p, .Honours p, .dbms p, .oop p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1070px) {
+        .flex_container {
+            flex-direction: column;
+            height: auto;
+            row-gap: 10px;
+        }
+    
+        .SSC, .HSC, .Honours, .dbms, .oop,.rcbot, .bitrcbot {
+            max-width: fit-content;
+        }
+}
+
+.wrap_contact {
+    margin-top: 100px;
+    width: 100vw;
+    height: auto;
+    background-color: #006666;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact_title {
+    flex: 1;
+    margin: 15px 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    padding: 15px 0px;
+    padding-left: 10px;
+    margin: 0;
+    color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.contact {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.contact img {
+    height: auto;
+    border: rgb(0, 0, 0) solid 5px;  
+    width: 5vw;
+    min-width: 50px;
+    border-radius: 75px;
+}
+
+.contact p {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    padding: 0px 20px;
+    text-align: center;
+}
